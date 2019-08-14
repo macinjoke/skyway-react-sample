@@ -23,10 +23,7 @@ const Footer: FC<Props> = ({ className }) => {
         Author: <a href="https://twitter.com/macinjoke">macinjoke</a>
       </_p>
       <_p>
-        Code:{' '}
-        <a href="https://github.com/macinjoke/my-skyway-sample">
-          https://github.com/macinjoke/my-skyway-sample
-        </a>
+        Code: <a href="https://github.com/macinjoke/skyway-react-sample">skyway-react-sample</a>
       </_p>
     </_Footer>
   )
