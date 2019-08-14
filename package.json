@@ -1,0 +1,49 @@
+{
+  "name": "my-skyway-sample",
+  "description": "my skyway sample.",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:macinjoke/my-skyway-sample.git",
+  "author": "macinjoke <shunji.makino@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "lint": "yarn eslint && yarn stylelint",
+    "eslint": "eslint --ext ts --ext tsx src --rulesdir rules --cache",
+    "stylelint": "stylelint --cache './src/**/*.tsx'"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-use": "^10.3.0",
+    "skyway-js": "^1.4.0",
+    "styled-components": "^5.0.0-beta.8"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "@types/styled-components": "^4.1.18",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "config": "^3.2.2",
+    "css-loader": "^3.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "prettier": "^1.18.2",
+    "style-loader": "^1.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "ts-loader": "^6.0.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  }
+}

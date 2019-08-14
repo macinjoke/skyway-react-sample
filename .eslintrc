@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": [
+    "react",
+    "prettier",
+    "@typescript-eslint",
+    "react-hooks",
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "prefer-arrow-callback": 2,
+    "react/prop-types": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/prefer-interface": 0,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 2,
+    "styled-components-name": [
+      2,
+      {
+        "tagStyle": { "startsWith": "_" },
+        "extendedStyle": { "startsWith":  "__"},
+      },
+    ],
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

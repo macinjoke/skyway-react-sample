@@ -1,0 +1,9 @@
+/node_modules/
+/dist/main.js
+
+config/*
+!config/default.js
+!config/netlify.js
+
+.eslintcache
+.stylelintcache
