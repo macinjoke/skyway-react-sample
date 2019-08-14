@@ -135,8 +135,6 @@ const __Footer = styled(Footer)`
   margin-top: auto;
 `
 
-const PEER_KEY = String(Math.floor(Math.random() * 9999))
-
 const App: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, initialState)
   const localVideoRef = useRef<HTMLVideoElement>(null)
@@ -144,7 +142,7 @@ const App: React.FC = () => {
   const remoteVideoRef = useRef<HTMLVideoElement>(null)
   const connectionRef = useRef<MediaConnection>()
   const step2Ref = useRef<ImperativeObject>(null)
-  const peer = usePeer(PEER_KEY, {
+  const peer = usePeer({
     key: CONFIG.skyway.apiKey,
     debug: 3,
   })
