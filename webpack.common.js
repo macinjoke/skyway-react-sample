@@ -1,9 +1,6 @@
 const webpack = require('webpack')
-const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -24,10 +21,5 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({ CONFIG: JSON.stringify(require('config')) }),
-    new ForkTsCheckerWebpackPlugin(),
   ],
-  devServer: {
-    contentBase: 'dist',
-    historyApiFallback: true,
-  },
 }
