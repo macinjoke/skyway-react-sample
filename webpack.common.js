@@ -19,7 +19,5 @@ module.exports = {
     extensions: ['.ts', '.tsx', '.js'],
     modules: [__dirname, 'node_modules'],
   },
-  plugins: [
-    new webpack.DefinePlugin({ CONFIG: JSON.stringify(require('config')) }),
-  ],
+  plugins: [new webpack.DefinePlugin({ CONFIG: JSON.stringify(require('config')) })],
 }
