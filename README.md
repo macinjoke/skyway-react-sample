@@ -19,3 +19,9 @@ https://github.com/skyway/skyway-js-skeleton を参考に作った。
 1人で別タブでやって一人二役でもできる
 
 LINEやってないおっさんとビデオ通話したいときに気軽に使えます
+
+# 使っている技術
+TypeScript, React, React Hooks, styled-components
+ビルドツール周りは Webpack4, Babel7, typescript-eslint あたり。 
+
+ナウさを追求した構成にしたつもり。
