@@ -1,7 +1,7 @@
 import React, { FC, RefObject } from 'react'
 import styled from 'styled-components'
 
-const _VideosDiv = styled.div`
+const _RootDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
@@ -37,7 +37,7 @@ type Props = {
 
 const Videos: FC<Props> = ({ localVideoRef, remoteVideoRef, isRemoteVisible }) => {
   return (
-    <_VideosDiv>
+    <_RootDiv>
       <_LocalVideoDiv>
         <_LocalVideo ref={localVideoRef} muted autoPlay></_LocalVideo>
       </_LocalVideoDiv>
@@ -46,7 +46,7 @@ const Videos: FC<Props> = ({ localVideoRef, remoteVideoRef, isRemoteVisible }) =
           <_RemoteVideo ref={remoteVideoRef} autoPlay></_RemoteVideo>
         </_RemoteVideoDiv>
       )}
-    </_VideosDiv>
+    </_RootDiv>
   )
 }
 
